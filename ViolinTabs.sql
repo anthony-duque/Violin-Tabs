@@ -1,0 +1,9 @@
+CREATE TABLE Songs (
+	id				INT PRIMARY KEY IDENTITY(0,1),
+	title			VARCHAR(30) NOT NULL,
+	artist			VARCHAR(50),
+	tab				VARCHAR(MAX) NOT NULL,
+	submittedBy		INT NOT NULL,
+	dateSubmitted	DATETIME NOT NULL DEFAULT GETDATE(),
+	genre			SMALLINT
+);
